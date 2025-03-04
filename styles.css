@@ -1,384 +1,59 @@
+<!-- First Section-->
+<div class="flex justify-between mt-2.5 p-7 first-child">
+    <div class="option opacity-50 text-xl font-medium italic"></div>
+    <img class="menu w-12 h-auto" src="menu.png" alt="Menu">
+</div>
 
-.first-child {
- display: flex;
- justify-content: space-between;
- margin-top: 10px;
- padding:30px;
-}
-.option {
-    opacity: 0.5;
-    font-size:x-large;
-    font-weight: 500;
-    font-style:inherit;
-}
-.menu {
- width: 50px; 
- height:auto;
+<div class="relative w-full">
+    <img class="header-img w-full h-auto" src="header.jpg" alt="Header Image">
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-black">
+        <h1 class="text-5xl text-blue-900 font-bold">Big Text</h1>
+        <p class="text-lg italic leading-6 text-center">Small Text</p>
+        <button class="text-green-700 border-2 border-green-700 rounded-full py-2 px-4 m-2">Button</button>
+    </div>
+</div>
 
-}
+<!-- Card Section -->
+<div class="flex flex-nowrap justify-around overflow-x-auto p-5">
+    <div class="card bg-blue-800 rounded-lg shadow-md p-5 w-52 transition-transform hover:scale-105 text-white text-center">Card 1</div>
+    <div class="card bg-green-500 rounded-lg shadow-md p-5 w-52 transition-transform hover:scale-105 text-white text-center">Card 2</div>
+    <div class="card bg-gray-700 rounded-lg shadow-md p-5 w-52 transition-transform hover:scale-105 text-white text-center">Card 3</div>
+</div>
 
-.header-img{
-    max-width: 100%;
-    height: auto;
+<!-- Third Section -->
+<div class="bg-gray-700 text-white text-center py-10">
+    <h2 class="text-2xl">Header Line</h2>
+    <div class="flex justify-center">
+        <button class="bg-green-500 text-white rounded-full px-6 py-4 my-5">Button</button>
+    </div>
+</div>
 
+<!-- Fourth Section -->
+<div class="bg-white text-center py-10">
+    <h2 class="text-green-600 text-2xl">Benefits</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-5">
+        <div class="bg-white text-black rounded-lg p-5">Card 1</div>
+        <div class="bg-green-500 text-white rounded-lg p-5">Card 2</div>
+        <div class="bg-gray-700 text-white rounded-lg p-5">Card 3</div>
+    </div>
+</div>
 
-}
+<!-- Fifth Section -->
+<div class="bg-cover bg-center py-20 text-white text-center" style="background-image: url('./developing-programmer.jpg');">
+    <h2 class="text-2xl">Works</h2>
+    <button class="text-black border-2 border-green-700 rounded-lg px-6 py-4 my-5">Demo</button>
+</div>
 
-.header-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: black;
-}
+<!-- Sixth Section -->
+<div class="bg-orange-100 p-10 text-center">
+    <h2 class="text-green-600">Top Text</h2>
+    <div class="flex flex-col md:flex-row justify-between items-center">
+        <img class="w-72 h-72 rounded-full" src="profile.jpg" alt="Profile Image">
+        <p class="text-gray-800">Some description text</p>
+    </div>
+</div>
 
-.big-text {
-    font-size: 50px;
-     /* Adjust the size as needed */
-     color: rgb(6, 6, 134);
-     text-align: center;
-}
-
-.bold-text {
-    font-weight: bold;
-}
-
-.small-text {
-    font-size: 20px; /* Adjust the size as needed */
-    line-height: 1.5;
-    font-style: italic;
-    text-align: center;
-
-
-}
-
-
-
-.header-content button {
-    color: #077e1b;
-    border: 2px solid #036603;
-    border-radius: 50px;
-    line-height: 1.5;
-margin:10px;
-
-
-}
-
-
-
-.header-content a {
-    color:black;
-    font-style: italic;
-    font-size: normal;
-}
-
-/* 2nd part  */
-.card-container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-    
-}
-
-.arrow{
-  position:relative;
-   width:40px;
-   height:40px;
-}
-/* display, relative, absolute  */
-.card {
-  background-color: #1c0fd8;
-  border-radius: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 0px;
-  text-align: center;
-  flex:0 0 auto;
-  min-width: 20px; 
-  max-width: 210px;
-  transition: 0.3s ease-in-out all;
-}
-.card1, .card3{
-  background-color: #243e55;
-}
-.card2{
-  background-color: #4eb290;
-}
-.cat-head{
-  color:white;
-  font-size: 30px;
-}
-.card:hover {
-  transform: scale(1.02);
-}
-
-.icon {
-  font-size: 3em;
-  margin-bottom: 10px;
-  color: #4CAF50;
-}
-
-h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 0.9em;
-  line-height: 1.5;
-}
-
-
- /* 3rd part */
-.third-cild{
-  background-color: #243e55;
-}
-
-/* Headers */
-.header,
-.header-line1 {
-  color: rgb(217, 227, 235); /* Maintains current color for headers */
-  text-align: center;
-  background-color:#243e55;
-}
-.btn-container{
-  display: flex;
-  justify-content: center;
-  
-}
-
-/* Button */
-.btn-line {
-  background-color: #0bbd87; 
-  border-radius: 40px;
-  padding: 20px;
-  margin: 30px auto;
- 
-}
-.btn-line1 {
-  
-    background-color: #0bbd87; 
-    color:white;
-    border-radius: 40px;
-    padding: 20px;
-    right: 0;
-    left: 0;
-    margin: 10px;  
-    margin-bottom: 55px;
-  
-}
-.bt{
-  display: flex;
-align-items: center;
-margin-top: 0;
-margin-bottom: 0; 
-padding-top: 10px;
-padding-bottom: 10px;
-}
-  /* Fourth  */
-
-
-  /* Common styles for all cards */
-.card-01,
-.card-02,
-.card-03,
-.card-04,
-.card-05,
-.card-06 {
-  border-radius: 20px;
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  opacity: 0.7;
-  transition: 0.3s ease-in-out all;
-}
-
-/* Specific styles for individual cards */
-.card-01,
-.card-03,
-.card-05 {
-  background-color:#ffffff;
-  color: black;
-}
-
-.card-02 {
-  background-color:#4db290;
-  color: aliceblue;
-}
-
-.card-04,
-.card-06 {
-  background-color:#243e55;
-  color: aliceblue;
-}
-
-/* Additional classes */
-.fourth-one {
-  background-color: white;
-}
-
-.benifits {
-  color: #4faf4c;
-  text-align: center;
-}
-
-
-
-
- /* Fifth part */
- .background-img {
-
-  background-image: url("./developing-programmer-development-website-design-a-2022-11-09-06-47-21-utc-scaled.jpg");
-  background-size: cover; /* Optional: Adjust image size */
-  background-repeat: no-repeat;
-  background-position:center; 
-}
-.works,.sus{
-  text-align: center;
-  color:white;
-}
-.Demo{
-  color: Black;
-  border: 2px solid #036603;
-  border-radius: 20px;
-  line-height: 1.0;
-  margin: 30px auto;
-   padding: 20px;
-   /* justify-content: center;
-    align-items: center;  */
-}
-/* Sixth */
-
-/*  Sixth part */
-.sixth{
-  background-color: antiquewhite;
-  padding: 50px 50px 50px 50px;
- 
-}
-.ms{
-  display: flex;
-  justify-content: center;
-  color:aliceblue;
-}
-
-
-.vsv{
-  height:300px;
-  width:300px;
-border-radius: 250px;
- /* This will center the image horizontally */
- 
- 
-}
-
-.dif{
-display: flex;
-justify-content: space-between;
-}
-.dif div{
-  width:100%
-}
-.top{
-  color:#049469;
-}
-
-.background-img-2{
-   background-image: url("./Learning.jpeg");
-  background-size: cover; /* Optional: Adjust image size */
-  background-repeat: no-repeat;
-  background-position:center; 
-}
-.background-img-2{
-  padding:20px 20px 50px 20px;
-  display:flex;
-  justify-content: space-around;
-  align-items: flex-end;
-}
-
-.abc{
-  color:#036603;
-  font-weight: 1000;
-}
-.def,.ghi,.ij{
-  color:aliceblue;
-}
-/* 8th part  */
-.col{
-  color:#0ae62e;
-}
-.sd{
-  text-align: center;
-}
-.cac{
-  display: flex;
-  justify-content: space-around;
-}
-
-.ca-1, .ca-2, .ca-3{
-  justify-content: center;
-}
-.xz {
-  display: flex;
-  justify-content: center;
-  color:black;
-}
-.nine{
-  background-color:#4eb290;
-  display:flex;
-  justify-content: space-around;
-  align-items:center;
-  color:aliceblue
-}
-.mp{
-  color:#169e73;
-  text-align: center;
-}
-.nl{
- color: #9e9e9e;
- text-align: center;
-}
-.np{
-  text-align: center;
-}
-.mn{
-  background-color: #ffffff;
-  opacity:0.8;
-  border-radius: 50px;
-  line-height: 1.0;
-  margin: 0 auto;
-  text-align: center;
-  padding:15px;
-  
-
-}
-.icons{
-  display: flex;
-  text-align: center;
-  justify-content:center;
-  gap:5px;
-  
-
-}
-.op{
-  background-color: rgba(0, 0, 255, 0.541);
-
-  border-radius: 50px;
-  line-height: 1.0;
-  margin: 40px;
-  text-align: center;
-  padding:10px;
-}
-
-.ten{
-  background-color:#323232;
-  color:white;
-  height:100px;
-  text-align: center;
-  
-padding:40px;
-}
-
-
-
-  
+<!-- Footer Section -->
+<div class="bg-gray-800 text-white text-center py-10">
+    <p>Footer Content</p>
+</div>
